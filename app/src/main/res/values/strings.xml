@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Submission8</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="tv_result_congratulation">Congratulation you have Successfully Register</string>
+    <string name="detail_activity">Detail Avtivity</string>
+    <string name="tv_dasbhboard_welcome" >Hello Name welcome Back</string>
+</resources>

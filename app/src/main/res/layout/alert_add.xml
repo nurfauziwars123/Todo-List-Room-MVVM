@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    app:layout_constraintCircleRadius="25dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".view.main.LoginFragment"
+    android:background="@color/background_custom"
+    >
+
+    <EditText
+        android:id="@+id/et_add_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/et_background_white"
+        android:drawableStart="@drawable/ic_edit"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="titile"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_add_deskription"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/et_background_white"
+        android:drawableStart="@drawable/ic_description_black_24dp"
+        android:drawablePadding="10dp"
+        android:ems="10"
+        android:hint="Deskription"
+        android:inputType="text"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_add_name" />
+
+    <Button
+        android:id="@+id/btn_add_Save"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/et_background_white"
+        android:text="Save"
+        android:textColor="@color/background_custom"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/et_add_deskription"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/et_add_deskription"
+        app:layout_constraintTop_toBottomOf="@+id/et_date_time" />
+
+    <EditText
+        android:id="@+id/et_date_time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/et_background_white"
+        android:drawableStart="@drawable/ic_access_time_black_24dp"
+        android:drawablePadding="10dp"
+        android:inputType="time"
+        android:hint="Example : 22:00, or 13:00"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="@+id/et_add_deskription"
+        app:layout_constraintStart_toStartOf="@+id/et_add_deskription"
+        app:layout_constraintTop_toBottomOf="@+id/et_add_deskription" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="wrap_content"
+        android:layout_height="0.3dp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_add_Save" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

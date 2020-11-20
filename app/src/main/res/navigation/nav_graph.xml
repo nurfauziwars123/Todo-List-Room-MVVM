@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/login_Fragment">
+    <fragment
+        android:id="@+id/login_Fragment"
+        android:name="com.example.submission8.view.main.LoginFragment"
+        android:label="Login_Fragment"
+        tools:layout="@layout/fragment_login"
+        >
+        <action
+            android:id="@+id/action_login_Fragment_to_register_Fragment"
+            app:destination="@id/register_Fragment" />
+        <action
+            android:id="@+id/action_login_Fragment_to_dasboardActivity"
+            app:destination="@id/dasboardActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/register_Fragment"
+        android:name="com.example.submission8.view.main.RegisterFragment"
+        android:label="Register_Fragment"
+        tools:layout="@layout/fragment_register"
+        >
+        <action
+            android:id="@+id/action_register_Fragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+        <action
+            android:id="@+id/action_register_Fragment_to_login_Fragment"
+            app:destination="@id/login_Fragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/login_Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.submission8.view.main.ResultFragment"
+        android:label="ResultFragment"
+        tools:layout="@layout/fragment_result"
+        >
+        <action
+            android:id="@+id/action_resultFragment_to_login_Fragment2"
+            app:destination="@id/login_Fragment"
+            app:launchSingleTop="true"
+            app:popUpTo="@+id/login_Fragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <activity
+        android:id="@+id/dasboardActivity"
+        android:name="com.example.submission8.view.dasboard.DasboardActivity"
+        android:label="activity_dasboard"
+        tools:layout="@layout/activity_dasboard" />
+</navigation>
